@@ -130,50 +130,50 @@ function generatePassword() {
     passwordCharacters += numericCharacters
   }
   
-  specialCharacters = prompt("Add special characters!")
+  specialCharacters = confirm("Add special characters!")
 
   if (specialCharacters){
     passwordCharacters += specialCharacters
   }
     
-  for (var i = 0; i < chooseCharLength; i++){
-    password = passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)]
-  }
-
   function writePassword() {
     var passowrd = generatePassword
     var passwordText = document.querySelector('#password');
-    passwordText.value = password;
+    passwordText.value = password;}
+  
 
-  }
+}
+ 
+}
 
 
+
+
+
+generateBtn.addEventListener('click', writePassword);
     
 
 
 
 
 
-}
 
 
 
 
 
 
-}
+
 
 
 
 
   
-}
 
 
 
 
-// Add event listener to generate button
-generateBtn.addEventListener('click', writePassword);
+
 
 
 
